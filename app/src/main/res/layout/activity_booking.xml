@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shivam.eventslistapp.BookingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:orientation="vertical">
+        <FrameLayout android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/book_image"
+                android:src="@mipmap/ic_launcher"
+                android:scaleX="2"
+
+                />
+
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:id="@+id/event_name_book_activity"
+                android:textSize="35sp"
+                android:gravity="bottom"
+                android:textAllCaps="true"
+                android:textColorHighlight="@color/colorPrimary"
+
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="2">
+                <LinearLayout android:layout_height="match_parent"
+                    android:background="@color/cardview_light_background"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/cardview_light_background"
+                        android:layout_margin="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+
+                                android:gravity="center"
+                                android:text=" LOCATION"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:drawableLeft="@android:drawable/ic_dialog_map"
+                                android:background="@android:color/holo_red_dark"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:textSize="15sp"
+                                android:textStyle="normal"
+                                android:textColor="@android:color/black"
+                                android:id="@+id/location_text_view"
+                                android:gravity="center"
+
+                                android:layout_weight="2"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/cardview_light_background"
+                        android:layout_margin="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="DATE"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                                android:background="@android:color/holo_red_dark"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:id="@+id/date_booking_text"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                android:layout_weight="2"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:background="@color/cardview_dark_background"
+                android:layout_weight="1">
+                <LinearLayout android:layout_height="match_parent"
+
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Contact Oraganiser"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:layout_weight="3"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Call"
+                        android:id="@+id/call"
+                        android:layout_margin="8dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:background="@android:color/holo_green_light"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="TEXT"
+                        android:id="@+id/text_org"
+                        android:layout_margin="7dp"
+
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:background="@android:color/holo_orange_light"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_light_background"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="EVENT DETAILS"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/description"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+
+                    android:layout_weight="4"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="BOOK TICKETS"
+                android:gravity="center"
+                android:id="@+id/book_ticket"
+                android:textSize="20sp"
+                android:background="@android:color/holo_orange_dark"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
+

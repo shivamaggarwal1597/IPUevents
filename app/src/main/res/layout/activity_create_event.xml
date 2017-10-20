@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="15dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shivam.eventslistapp.CreateEvent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleY="2"
+        android:alpha="0.5"
+        android:src="@drawable/create_image_back"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Mobile Number"
+        android:id="@+id/create_event_mobile_edit_text"
+        android:padding="5dp"
+        android:layout_marginTop="160dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:text="PROCEED"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/create_event_proceed_btn"
+        android:background="@android:color/holo_green_dark"
+        android:layout_gravity="center_vertical"/>
+
+</FrameLayout>

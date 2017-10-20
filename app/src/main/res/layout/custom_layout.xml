@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:layout_margin="10dp"
+    android:background="@color/cardview_light_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_border"
+                android:id="@+id/image_of_event"
+                android:scaleX="3"
+
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            //start date text view
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="16"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:id="@+id/start_date_text_view"
+                    android:layout_height="0dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="SEP"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:gravity="center"
+                    android:id="@+id/start_month_text_view"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+                //name text view
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="HACKATHON"
+                    android:paddingLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:id="@+id/event_name_text_view"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"/>
+                //location text view
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/event_address_text_view"
+
+                    android:layout_weight="1"/>
+            </LinearLayout>>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="match_parent">
+
+                <Button android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/book_tickets_button"
+                    android:text="BOOK"
+                    android:layout_margin="15dp"
+
+                    android:background="@drawable/custom_button"/>
+            </LinearLayout>>
+        </LinearLayout>>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            //category text view
+            <TextView android:layout_width="0dp"
+                android:layout_weight="2"
+
+                android:gravity="center"
+                android:id="@+id/event_category_text_view"
+                android:textSize="15sp"
+                android:background="@drawable/custom_border"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_height="match_parent"/>
+            //price text view
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Rs. 3000"
+                android:background="@drawable/custom_border"
+                android:id="@+id/event_price_text_view"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

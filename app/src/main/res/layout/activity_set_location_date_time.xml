@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shivam.eventslistapp.SetLocationDateTime">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/setlocation_loaction_edit_text"
+            android:layout_weight="1"
+            android:hint="Enter the location"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/setlocation_fetch_location_button"
+            android:background="@android:color/holo_red_light"
+            android:text="Fetch Location By GPS"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/setlocation_fetch_location_text_view"
+            android:text="Fetched Location is :"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.3"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@android:color/holo_green_light"
+            android:text="ENTER DESCRIPTION"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/setlocation_description_edit_text"
+            android:hint="Enter the description here"
+            android:layout_weight="7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="Start Date"
+                android:id="@+id/set_loaction_start_date_edit_text"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="0dp"
+                android:id="@+id/set_loaction_start_month_edit_text"
+                android:layout_height="match_parent"
+                android:hint="Start Month"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="PROCEED"
+            android:id="@+id/setlocation_proceed_button"
+            android:textStyle="bold"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+</LinearLayout>
